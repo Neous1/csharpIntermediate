@@ -4,13 +4,18 @@ namespace Properties
 {
     public class Person
     {
+
+        //add a private modifier in from of set if one wishes to set a field only once.
+        // set is readonly
+        public DateTime Birthdate { get; private set; }
+
+
+
         //create a constructor to make birthday accessible only once
         public Person(DateTime birthdate)
         {
             Birthdate = birthdate;
         }
-        //add a private modifier in from of set if one wishes to set a field only once.
-        public DateTime Birthdate { get; private set;  }
 
         public int Age
         {
