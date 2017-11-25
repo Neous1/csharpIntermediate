@@ -1,14 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Properties
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             var person = new Person(new DateTime(1983, 3, 31));
             Console.WriteLine(person.Age);
