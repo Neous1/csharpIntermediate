@@ -10,7 +10,10 @@ namespace constructors
     {
         static void Main(string[] args)
         {
-            var customer = new Customer(1, "Yvon");
+            var customer = new Customer();
+            customer.Id = 1;
+            customer.Name = "Yvon";
+
             Console.WriteLine(customer.Id);
             Console.WriteLine(customer.Name);
         }
