@@ -10,8 +10,18 @@ namespace Methods
     {
         static void Main(string[] args)
         {
-            
+            // try catch is used to avoid exception thrown by Parse()
+            try
+            {
+                var num = int.Parse("abc");
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Conversion Failed");
+            }
 
+            // tryParse() method
+            
 
         }
 
