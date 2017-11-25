@@ -10,6 +10,20 @@ namespace Methods
     {
         static void Main(string[] args)
         {
+            
+
+
+        }
+
+        static void UseParams()
+        {
+            var calculator = new Calculator();
+            //the params keyword used to setup the calculator class allows for the multitude of 
+            // parameters being passed to add.
+            Console.WriteLine(calculator.Add(1, 2));
+            Console.WriteLine(calculator.Add(1, 2, 3));
+            Console.WriteLine(calculator.Add(1, 2, 3, 4));
+            Console.WriteLine(calculator.Add(1, 2, 3, 4, 5));
         }
 
         static void UsePoints()
