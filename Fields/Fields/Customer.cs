@@ -5,8 +5,9 @@ namespace Fields
     public class Customer
     {
         public int Id;
-        public string Name;
-        public List<Order> Orders = new List<Order>();
+        public string Name; 
+        //use readonly modifier because orders should only be initialized once
+        public readonly List<Order> Orders = new List<Order>();
 
         // create constructors for customer
         public Customer(int id)
@@ -22,7 +23,7 @@ namespace Fields
 
         public void Promote()
         {
-            Orders = new List<Order>();
+            
         }
     }
 }
