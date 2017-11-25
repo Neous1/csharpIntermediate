@@ -6,14 +6,13 @@ using System.Threading.Tasks;
 
 namespace Properties
 {
-    public class Person
-    {
-        public DateTime Birthdate { get; set;  }
-    }
     class Program
     {
         static void Main(string[] args)
         {
+            var person = new Person();
+            person.Birthdate = new DateTime(1983, 3, 31);
+            Console.WriteLine(person.Age);
         }
     }
 }
