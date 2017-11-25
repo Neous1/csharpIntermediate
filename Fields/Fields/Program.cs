@@ -12,6 +12,11 @@ namespace Fields
         public string Name;
     }
 
+    public class Order
+    {
+        
+    }
+
 class Program
     {
 
