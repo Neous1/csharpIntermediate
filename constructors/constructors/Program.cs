@@ -10,7 +10,7 @@ namespace constructors
     {
         static void Main(string[] args)
         {
-
+            var customer = new Customer();
         }
     }
 }
