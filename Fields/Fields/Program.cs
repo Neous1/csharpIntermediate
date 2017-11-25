@@ -10,7 +10,7 @@ namespace Fields
     {
         public int Id;
         public string Name;
-        public List<Order> Orders;
+        public List<Order> Orders = new List<Order>();
 
         // create constructors for customer
         public Customer(int id)
