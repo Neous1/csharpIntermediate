@@ -10,6 +10,19 @@ namespace Fields
     {
         public int Id;
         public string Name;
+        public List<Order> Orders;
+
+        // create constructors for customer
+        public Customer(int id)
+        {
+            this.Id = id;
+        }
+
+        public Customer(int id,string name)
+            :this(id)
+        {
+            this.Name = name;
+        }
     }
 
     public class Order
