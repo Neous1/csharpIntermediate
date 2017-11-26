@@ -6,6 +6,10 @@ namespace Ex1
     {
         public DateTime Clocked { get; set; }
 
+        public Stopwatch(DateTime clocked)
+        {
+            Clocked = clocked;
+        }
         public int Start()
         {
             //create a method to start the stopwatch.
@@ -17,6 +21,7 @@ namespace Ex1
 
         public int Stop()
         {
+            //get the stop time
 
             return 0;
         }
