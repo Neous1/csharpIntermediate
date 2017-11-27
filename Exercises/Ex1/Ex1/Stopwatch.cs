@@ -8,6 +8,9 @@ namespace Ex1
 
         public int Start()
         {
+            //create a method to start the stopwatch.
+            // get the start time 
+
 
             return 0;
         }
