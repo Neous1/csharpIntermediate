@@ -15,7 +15,7 @@ namespace AccessModifiers
 
 
         //change CalculatingRating to private to make it acessible only to promote()
-        private int CalculateRating(bool excludeOrders)
+        protected int CalculateRating(bool excludeOrders)
         {
             return 0;
         }
