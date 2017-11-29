@@ -8,15 +8,6 @@ namespace AccessModifiers
 {
 
 //crteate a class that derives from the customer class
-    public class GoldCustomer : Customer
-    {
-        public void OfferVoucher()
-        {
-            var rating = this.CalculateRating(excludeOrders: true); // calculatingRating is accessible 
-            //becuase it's a protected modifier which should be used minimally to avoid breaking the program in the case where
-            // calculatingRating() gets decommissioned or deleted 
-        }
-    }
     class Program
     {
         static void Main(string[] args)
