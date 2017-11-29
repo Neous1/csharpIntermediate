@@ -17,6 +17,10 @@ namespace Inheritance
 
         }
 
+        public void Duplicate()
+        {
+            Console.WriteLine("Object was duplicated");
+        }
         
     }
     class Program
