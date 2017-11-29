@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Amazon;
 
 namespace AccessModifiers
 {
@@ -16,7 +17,9 @@ namespace AccessModifiers
             person.SetBirthdate(new DateTime(1980,3,31));
             Console.WriteLine(person.GetBirthdate());
 
-
+            var customer = new Customer();
+            Amazon.RateCalculator calulator = new RateCalculator();
+          
         }
     }
 }
