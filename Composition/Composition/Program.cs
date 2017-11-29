@@ -13,6 +13,11 @@ namespace Composition
         {
             _logger = logger;
         }
+
+        public void Install()
+        {
+            _logger.Log("we are installing the application");
+        }
     }
     class Program
     {   
