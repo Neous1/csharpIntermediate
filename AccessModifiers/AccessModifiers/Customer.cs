@@ -9,15 +9,10 @@ namespace AccessModifiers
 
         public void Promote()
         {
-            var rating = CalculateRating(excludeOrders:true);
-            Console.WriteLine(rating == 0 ? "Promoted to level 1" : "Promoted to level 2");
+            Console.WriteLine("promote logic change");
         }
 
 
-        //change CalculatingRating to private to make it acessible only to promote()
-        protected int CalculateRating(bool excludeOrders)
-        {
-            return 0;
-        }
+
     }
 }
