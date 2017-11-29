@@ -6,40 +6,16 @@ using System.Threading.Tasks;
 
 namespace AccessModifiers
 {
-    public class Person
+
+//crteate a class that derives from the customer class
+    public class GoldCustomer : Customer
     {
-        private DateTime _birthdate;
-
-        //create method to access birthdate
-        public void SetBirthdate(DateTime birthdate)
+        public void OfferVoucher()
         {
-            _birthdate = birthdate;
-        }
-
-        public DateTime GetBirthdate()
-        {
-            return _birthdate;
+           
         }
     }
-
-    public class Customer
-    {
-        public int Id { get; set; }
-        public string Name { get; set; }
-
-        public void Promote()
-        {
-            var rating = CalculateRating(excludeOrders:true);
-            Console.WriteLine(rating == 0 ? "Promoted to level 1" : "Promoted to level 2");
-        }
-
-        private int CalculateRating(bool excludeOrders)
-        {
-            return 0;
-        }
-    }
-
-class Program
+    class Program
     {
         static void Main(string[] args)
         {
