@@ -29,14 +29,11 @@ namespace AccessModifiers
 
         public void Promote()
         {
-            var rating = CalculateRating();
-            if (rating == 0)
-                Console.WriteLine("Promoted to level 1");
-            else
-                Console.WriteLine("Promoted to level 2");
+            var rating = CalculateRating(excludeOrders:true);
+            Console.WriteLine(rating == 0 ? "Promoted to level 1" : "Promoted to level 2");
         }
 
-        public int CalculateRating()
+        private int CalculateRating(bool excludeOrders)
         {
             return 0;
         }
