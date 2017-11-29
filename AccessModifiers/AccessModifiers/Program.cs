@@ -22,6 +22,14 @@ namespace AccessModifiers
         }
     }
 
+    public class Customer
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+
+
+    }
+
 class Program
     {
         static void Main(string[] args)
@@ -29,6 +37,8 @@ class Program
             var person = new Person();
             person.SetBirthdate(new DateTime(1980,3,31));
             Console.WriteLine(person.GetBirthdate());
+
+
         }
     }
 }
