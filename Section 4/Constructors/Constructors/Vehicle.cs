@@ -7,10 +7,10 @@ namespace Constructors
         private readonly string _registrationNumber;
 
         // create a default constructor
-        public Vehicle()
-        {
-            Console.WriteLine("Vehicle is being initialized");
-        }
+//        public Vehicle()
+//        {
+//            Console.WriteLine("Vehicle is being initialized");
+//        }
 
         public Vehicle( string registrationNumber)
         {
