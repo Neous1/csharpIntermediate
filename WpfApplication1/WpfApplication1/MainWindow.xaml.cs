@@ -27,7 +27,7 @@ namespace WpfApplication1
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            var button = sender as Button;
+            var button = sender as Button; //downcasting to a specific type or the use the As keyword
 
             if(button != null)
                 MessageBox.Show(button.ActualHeight.ToString());
