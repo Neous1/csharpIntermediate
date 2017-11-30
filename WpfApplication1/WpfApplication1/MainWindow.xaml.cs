@@ -27,9 +27,10 @@ namespace WpfApplication1
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            var button = (Button) sender;
-            
-            MessageBox.Show(button.ActualHeight.ToString());
+            var button = sender as Button;
+
+            if(button != null)
+                MessageBox.Show(button.ActualHeight.ToString());
 
             MessageBox.Show("Hello World!");
         }
