@@ -6,21 +6,16 @@ using System.Threading.Tasks;
 
 namespace MethodOverriding
 {
-    public class Canvas
-    {
-        public void Drawshapes(List<Shape> shapes)
-        {
-            // polymorphism
-            foreach (var shape in shapes)
-            {
-                shape.Draw();
-            }
-        }
-    }
     class Program
     {
         static void Main(string[] args)
         { 
+            var shapes = new List<Shape>();
+            shapes.Add(new Circle());
+            shapes.Add(new Rectangle());
+
+            var canvas = new Canvas();
+            canvas.Drawshapes(shapes);
         }
     }
 }
