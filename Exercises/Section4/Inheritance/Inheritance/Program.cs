@@ -6,23 +6,6 @@ using System.Threading.Tasks;
 
 namespace Inheritance
 {
-    class Stack
-    {
-        public void Push(object obj)
-        {
-            
-        }
-
-        public object Pop()
-        {
-            return 0;
-        }
-
-        private void Clear()
-        {
-            
-        }
-    }
     class Program
     {
         static void Main(string[] args)
@@ -32,11 +15,15 @@ namespace Inheritance
             stack.Push(2);
             stack.Push(3);
 
-            foreach (object obj in stack)
-            {
-                Console.WriteLine(obj);
-            }
-            Console.WriteLine(stack.Pop());
+            string s = Convert.ToString(stack.Pop());
+ 
+//            foreach (object obj in stack)
+//            {
+//                Console.WriteLine();
+//            }
+//            Console.WriteLine(stack.Pop());
+
+            //Console.WriteLine(stack.Pop());
 
         }
     }
