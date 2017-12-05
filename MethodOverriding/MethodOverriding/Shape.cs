@@ -19,11 +19,20 @@ namespace MethodOverriding
 
         }
     }
+
+    public class Triangle : Shape
+    {
+        public override void Draw()
+        {
+            Console.WriteLine("Draw a rectangle");
+
+        }
+    }
     public class Shape
     {
         public int Width { get; set; }
         public int Height { get; set; }
-        public Position Position { get; set; }
+        //public Position Position { get; set; }
 
         //virtual keyworld makes draw() overidable in other subclass
         // that need to draw as a base method
