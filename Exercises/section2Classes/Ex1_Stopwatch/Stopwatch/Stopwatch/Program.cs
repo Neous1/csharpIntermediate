@@ -60,7 +60,7 @@ namespace Stopwatch
             //Console.WriteLine("string is " + a);
             while (a != "x")
             {
-                if (a == "a")
+                if (a != "x")
                 {
                     stopwatch.Start();
                     Console.WriteLine("started at " + DateTime.Now.Second);
@@ -92,7 +92,7 @@ namespace Stopwatch
                 string s = Console.ReadLine();
                 //Console.WriteLine("string is " + s);
 
-                if (s == "s")
+                if (a != "x")
                 {
                     stopwatch.Stop();
                     Console.WriteLine("stopping at " + DateTime.Now.Second);
