@@ -6,8 +6,22 @@ using System.Threading.Tasks;
 
 namespace Ex1_Polymorphism
 {
+    class SqlConnection : DbConnection
+    {
+        public SqlConnection(string connectionString) : base(connectionString)
+        {
+        }
+    }
+
+    class OracleConnection : DbConnection
+    {
+        public OracleConnection(string connectionString) : base(connectionString)
+        {
+        }
+    }
     class DbConnection
     {
+
         private string _connectionString;
 
         public string ConnectionString
@@ -24,6 +38,21 @@ namespace Ex1_Polymorphism
         }
 
         public TimeSpan Timeout { get; set; }
+
+        public DbConnection(string connectionString)
+        {
+            
+        }
+
+        public void OpenConnection()
+        {
+
+        }
+
+        public void CloseConnection()
+        {
+
+        }
 
 
     }
