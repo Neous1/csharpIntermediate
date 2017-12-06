@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -62,8 +63,26 @@ So the class should throw an InvalidOperationException if its started twice.
         static void Main(string[] args)
         {
             var stopwatch = new Stopwach();
-            Console.WriteLine(stopwatch.Start());
-            //Console.WriteLine("Type this:Lorem Ipsum is simply dummy " +
+            //Console.WriteLine(stopwatch.Start());
+
+            
+            //Console.WriteLine(stopwatch.Stop());
+
+            Console.WriteLine(" Enter A to Start the stopwatch");
+            string a = Console.ReadLine();
+            Console.WriteLine("string is " + a);
+
+            if (a == "a")
+            {
+                stopwatch.Start();
+            }
+
+            var start = stopwatch.Start();
+            //Task.Delay(50000000);
+
+            //Console.WriteLine("Type this:");
+            Console.WriteLine();
+            //Console.WriteLine("Lorem Ipsum is simply dummy " +
             //                  "text of the printing and typesetting industry. " +
             //                  "Lorem Ipsum has been the industry's standard " +
             //                  "dummy text ever since the 1500s, when an unknown " +
@@ -76,11 +95,25 @@ So the class should throw an InvalidOperationException if its started twice.
             //                  "and more recently with desktop publishing software " +
             //                  "like Aldus PageMaker including versions of " +
             //                  "Lorem Ipsum");
-            //var s = Console.ReadLine();
-            Console.WriteLine(stopwatch.Stop());
-            
 
-            Console.Read();
+            //var s = Console.ReadLine();
+
+            Console.WriteLine("Press S to Stop the stopwatch");
+
+            string s = Console.ReadLine();
+            Console.WriteLine("string is " + s);
+
+            if (s == "s")
+            {
+                stopwatch.Stop();
+            }
+            var end = stopwatch.Stop();
+
+            TimeSpan duration = (end - start);
+
+            Console.WriteLine("durantion is {0}", duration);
+
+    
 
         }
     }
