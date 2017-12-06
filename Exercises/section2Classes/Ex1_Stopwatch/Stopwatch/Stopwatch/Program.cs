@@ -55,7 +55,7 @@ namespace Stopwatch
             var stopwatch = new Stopwach();
 
 
-            Console.WriteLine(" Enter A to Start the stopwatch");
+            Console.WriteLine(" Enter a key to Start the stopwatch");
             string a = Console.ReadLine();
             //Console.WriteLine("string is " + a);
             while (a != "x")
@@ -87,9 +87,9 @@ namespace Stopwatch
 
                 //var s = Console.ReadLine();
 
-                Console.WriteLine("Press S to Stop the stopwatch");
+                Console.WriteLine("Press a key to Stop the stopwatch");
 
-                string s = Console.ReadLine();
+                a = Console.ReadLine();
                 //Console.WriteLine("string is " + s);
 
                 if (a != "x")
@@ -99,7 +99,7 @@ namespace Stopwatch
                 }
                 var end = stopwatch.Stop();
 
-                TimeSpan duration = (end - start).Duration();
+                TimeSpan duration = end - start;
 
                 Console.WriteLine("Time ellapsed is {0}", duration);
                 Console.WriteLine();
