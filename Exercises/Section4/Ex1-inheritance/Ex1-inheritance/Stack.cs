@@ -13,7 +13,7 @@ namespace Ex1_inheritance
             set
             {
                 if (_obj != null)
-                _obj = value;
+                    _obj = value;
             }
         }
 
@@ -35,7 +35,7 @@ namespace Ex1_inheritance
 
 
             return value;
-            
+
         }
 
         public void Clear()
@@ -44,7 +44,7 @@ namespace Ex1_inheritance
             {
                 _myStack.Remove(item);
             }
-            
+
         }
     }
 }
