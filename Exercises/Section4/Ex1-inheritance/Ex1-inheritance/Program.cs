@@ -12,7 +12,7 @@ namespace Ex1_inheritance
         static void Main(string[] args)
         {
             var stack = new Stack();
-            stack.Push("1");
+            stack.Push("Joelle");
             stack.Push("sally");
             stack.Push("bob");
 
@@ -20,6 +20,10 @@ namespace Ex1_inheritance
             Console.WriteLine(stack.Pop());
             Console.WriteLine(stack.Pop());
             Console.WriteLine(stack.Pop());
+
+            stack.Clear();
+
+            Console.ReadLine();
         }
     }
 }
