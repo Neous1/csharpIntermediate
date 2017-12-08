@@ -13,9 +13,16 @@ Timeout : TimeSpan*/
             get { return _connectionString; }
             set
             {
+                //if (String.IsNullOrEmpty(_connectionString))
+                //    Console.WriteLine("connection string needed to connect");
+               
+
                 if (String.IsNullOrEmpty(_connectionString))
-                    Console.WriteLine("connection string needed to connect");
-                _connectionString = value;
+                {
+                    throw new ArgumentNullException();
+                }
+                //_connectionString = value;
+                _connectionString = Console.ReadLine();
             }
         }
 

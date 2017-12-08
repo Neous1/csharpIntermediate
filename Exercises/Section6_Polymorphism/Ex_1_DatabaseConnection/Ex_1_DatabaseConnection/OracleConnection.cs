@@ -10,12 +10,14 @@ namespace Ex_1_DatabaseConnection
 
         public override void OpenConnection()
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
+            Console.WriteLine("open a Oracle DB");
         }
 
         public override void CloseConnection()
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
+            Console.WriteLine("Close Oracle DB");
         }
     }
 }
