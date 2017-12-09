@@ -39,24 +39,6 @@ namespace Ex_1_DatabaseConnection
                 }
             }
 
-            //Console.WriteLine("Press S or O key to close ");
-            //connector = Console.ReadLine();
-            //if (connector != null)
-            //{
-            //    connector = connector.ToUpper();
-            //    switch (connector)
-            //    {
-            //        case "S":
-            //            sql.CloseConnection();
-            //            Console.WriteLine("sql is open for business");
-            //            Console.WriteLine();
-            //            break;
-            //        case "O":
-            //            orcl.CloseConnection();
-            //            Console.WriteLine("Oracle is open for business");
-            //            break;
-            //    }
-            //}
         }
     }
 }
