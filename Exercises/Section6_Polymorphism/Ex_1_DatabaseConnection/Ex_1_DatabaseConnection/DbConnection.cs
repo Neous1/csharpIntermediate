@@ -21,8 +21,8 @@ Timeout : TimeSpan*/
                 {
                     throw new ArgumentNullException();
                 }
-                //_connectionString = value;
-                _connectionString = Console.ReadLine();
+                _connectionString = value;
+                //value = Console.ReadLine();
             }
         }
 
