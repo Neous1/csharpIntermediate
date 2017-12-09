@@ -1,38 +1,28 @@
 using System;
+using System.IO;
 
 namespace Ex_1_DatabaseConnection
 {
     public abstract class DbConnection
     {
-        private string _connectionString;
+        public string ConnectionString;
 
-        /*ConnectionString : string
-Timeout : TimeSpan*/
-        public string ConnectionString
+        public TimeSpan Timeout;
+
+
+        protected DbConnection(string connectionString)
         {
-            get { return _connectionString; }
-            set
+            if (String.IsNullOrEmpty(connectionString))
             {
-                //if (String.IsNullOrEmpty(_connectionString))
-                //    Console.WriteLine("connection string needed to connect");
-               
-
-                if (String.IsNullOrEmpty(_connectionString))
-                {
-                    throw new ArgumentNullException();
-                }
-                _connectionString = value;
-                //value = Console.ReadLine();
+                throw new InvalidDataException("connection string is missing");
             }
+            ConnectionString = connectionString;
+
+            Timeout = TimeSpan.FromMilliseconds(54000);
+
         }
 
-        public TimeSpan Timeout { get; set; }
 
-
-        public DbConnection(string connectionString)
-        {
-            _connectionString = connectionString;
-        }
 
         public abstract void OpenConnection();
 
